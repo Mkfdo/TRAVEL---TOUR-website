@@ -21,10 +21,21 @@
     width: 100%;
     padding: 1rem;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.242);
 }
 
 .logo {
     color: var(--blackColor);
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+        font-size: 25px;
+        color: var(--PrimaryColor);
+        transform: translateY(5px);
 }
 
 .navBar{
@@ -33,12 +44,12 @@
         height: max-content;
         width: 80%;
         border-radius: 1rem;
-        top: 6rem;
+        top: -500rem;
         left: 50%;
         transform: translate(-50%);
         z-index: 2000;
         box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
-        transition: .3s ease-in-out;
+        transition: .1s ease-in-out;
 }
 
 .navLists{
@@ -72,4 +83,41 @@
         color: var(--whiteColor);
 } 
 
-@media  screen and (max-width: 768px) {}
+.toggleNavbar{
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: var(--PrimaryColor);  
+}
+
+.toggleNavbar:hover{
+        color: var(--SecondaryColor);
+}
+
+.closeNavbar {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: var(--PrimaryColor);
+}
+
+.closeNavbar:hover{
+        color: var(--SecondaryColor);
+}
+
+.icon{
+        font-size: 25px;
+        color: var(--PrimaryColor);
+}
+
+.icon:hover{
+        color: var(--SecondaryColor);
+}
+
+@media  screen and (max-width: 768px) {
+}
+
+
+        
+
+        
